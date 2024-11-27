@@ -30,7 +30,6 @@ public class CancelBookingFrame extends JFrame {
             int bookingId = Integer.parseInt(bookingIdField.getText());
             boolean found = false;
 
-            // Search for the reservation by booking ID and remove it
             for (int i = 0; i < BookTicketFrame.getReservations().size(); i++) {
                 if (BookTicketFrame.getReservations().get(i).getBookingId() == bookingId) {
                     BookTicketFrame.getReservations().remove(i);
